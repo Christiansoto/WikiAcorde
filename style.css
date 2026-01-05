@@ -143,6 +143,12 @@ h1{
 .genero-impar *{
     color: black;
 }
+.seccion-spa{
+    display:none;
+}
+.seccion-visible{
+    display:flex !important;
+}
 
 
 
@@ -414,6 +420,7 @@ footer{
         top: 0;
         left: 0;
     }
+    
 
     
     
