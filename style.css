@@ -11,6 +11,21 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  /* Fondo base sólido para dar cohesión */
+  background-color: #ff9a9e; 
+  /* Capas de degradados radiales */
+  background-image:
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(17,62%,18%,1) 0, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(242,100%,70%,1) 0, transparent 50%);
+  background-attachment: fixed;
+}
 
 @keyframes rotar {
     from {
@@ -26,7 +41,6 @@
 header{
     max-height: 140vh;
     width: 100%;
-    background-color: #000;
     background-size:cover;
 }
 nav{
@@ -125,7 +139,7 @@ h1{
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    background-color: #050505;
+
 }
 .titulo{
     font-size: 5rem;
@@ -170,7 +184,6 @@ h1{
 
 
 .presentacion-genero-impar{
-    background-color: #eeac39;
     
 }
 .presentacion-genero-par{
@@ -201,7 +214,7 @@ h1{
     min-width: 10vw;
     padding: 15px 10px ;
 
-    background-color: #dd9b28ea;
+
     border-radius: 5px;
     cursor: pointer;
     transition: 1s;
@@ -252,7 +265,7 @@ h1{
 }
 .presentacion-tienda h2{
     font-size: 120px;
-    color: #eeac39;
+
 }
 
 .tienda{
@@ -332,7 +345,6 @@ h1{
 footer{
     width: 100%;
     height: 40vh;
-    background-color: #06080d;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -348,13 +360,24 @@ footer{
     gap: 5px;
     border: solid red;
 }
-#boton-volver{
-    position: absolute;
-    right: 5vw;
-    bottom: 10px;
-
-    font-size: 2rem;
+.contenedor-redes a, .contenedor-volver-arriba a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contenedor-volver-arriba{
+    border: solid red;
+    height: auto;
+    min-height: 44px;
+}
+.contenedor-volver-arriba a{
+    font-size: 1.5rem;
     transition: .1s all ease-out;
+}
+.volver-arriba i{
+    font-size: 2rem;
 }
 #boton-volver:hover{
     color: wheat;
