@@ -16,4 +16,4 @@ function cambiarSeccion(id) {
 }
 
 // Para que al cargar la página se vea Rock por defecto
-window.onload = () => cambiarSeccion('genero1');
+window.onload = () => cambiarSeccion('Inicio');
